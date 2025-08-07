@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Enhanced HTML5 Page</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 2rem; }
+    table, th, td { border: 1px solid #ccc; border-collapse: collapse; padding: 8px; }
+    fieldset { margin-top: 1.5rem; }
+    label { display: block; margin-top: 0.5rem; }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>HTML5 Content & Form Showcase</h1>
+    <p>This page demonstrates lists, tables, media, and a fully functional HTML5 form.</p>
+  </header>
+
+  <section>
+    <h2>📋 List of Topics</h2>
+    <ul>
+      <li>HTML5 Semantic Tags</li>
+      <li>Form Validation</li>
+      <li>Media Embedding</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>📊 Sample Table</h2>
+    <table>
+      <thead>
+        <tr><th>Feature</th><th>Description</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>Placeholder</td><td>Shows hint text inside input fields</td></tr>
+        <tr><td>Required</td><td>Ensures field must be filled</td></tr>
+      </tbody>
+    </table>
+  </section>
+
+  <section>
+    <h2>🎬 Embedded Media</h2>
+    <img src="https://via.placeholder.com/300x150" alt="Sample Image">
+    <audio controls>
+      <source src="sample-audio.mp3" type="audio/mpeg">
+      Your browser does not support the audio element.
+    </audio>
+  </section>
+
+  <main>
+    <h2>📝 Registration Form</h2>
+    <form>
+      <fieldset>
+        <legend>Personal Info</legend>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" autocomplete="on" required>
+
+        <label for="age">Age:</label>
+        <input type="number" id="age" name="age" min="18" max="99" required>
+      </fieldset>
+
+      <fieldset>
+        <legend>Preferences</legend>
+        <label>
+          <input type="checkbox" name="subscribe" checked readonly>
+          Subscribe to newsletter
+        </label>
+
+        <label for="color">Favorite Color:</label>
+        <input type="text" id="color" name="color" pattern="[A-Za-z]+" placeholder="e.g. Blue" required>
+      </fieldset>
+
+      <button type="submit">Submit</button>
+    </form>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Shi's Web Lab</p>
+  </footer>
+
+</body>
+</html>
